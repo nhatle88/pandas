@@ -1,1 +1,1 @@
-filtered_df = df[df[['name', 'country', 'region']].notnull().all(1)]
+filtered_df = df[df[['column_1', 'column_2'].notnull().all(1)]
