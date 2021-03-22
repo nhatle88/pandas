@@ -2,10 +2,10 @@
 
 ### insert a new row for All Buildings selection
 
-`df.loc[-1] = ['All']` 
+<code>df.loc[-1] = ['All']</code>
 
-`df.index = df.index + 1`
+df.index = df.index + 1
 
-`df = df.sort_index()`
+df = df.sort_index()</code>
 
 
