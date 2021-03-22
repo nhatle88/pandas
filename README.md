@@ -1,6 +1,6 @@
 # pandas-tips
 
-### insert a new row for All Buildings selection
+### insert a new row for All selection
 
 ```python
 df.loc[-1] = ['All']
