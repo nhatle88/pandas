@@ -8,3 +8,7 @@ df.index = df.index + 1
 df = df.sort_index()
 ```
 
+### 2. Group rows by a column into a list
+```python
+df = df.groupby('column_1')['column_2'].apply(list).reset_index(name='lists')
+```
