@@ -9,11 +9,15 @@ df = df.sort_index()
 ```
 
 ### 2. Group rows by a column into a list
-1 column
+Group by 1 column, 1 other column into a list
 ```python
 df = df.groupby('column_1')['column_2'].agg(list).reset_index()
 ```
-Many columns
+Group by many columns, 1 column into a list
+```python
+df = df.groupby(['column_1','column_2'])['column_3'].agg(list).reset_index()
+```
+Group by 1 column, other columns into lists
 ```python
 In [5]: df = pd.DataFrame( {'a':['A','A','B','B','B','C'], 'b':[1,2,5,5,4,6],'c'
    ...: :[3,3,3,4,4,4]})
