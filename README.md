@@ -11,7 +11,7 @@ df = df.sort_index()
 ### 2. Group rows by a column into a list
 1 column
 ```python
-df = df.groupby('column_1')['column_2'].agg(list).reset_index(name='lists')
+df = df.groupby('column_1')['column_2'].agg(list).reset_index()
 ```
 Many columns
 ```python
