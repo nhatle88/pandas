@@ -1,6 +1,6 @@
 # pandas-tips
 
-### 1. Insert a new row for All selection
+### 1. Insert a new row in top of a dataframe 
 
 ```python
 df.loc[-1] = ['All']
