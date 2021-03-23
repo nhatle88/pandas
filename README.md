@@ -9,9 +9,11 @@ df = df.sort_index()
 ```
 
 ### 2. Group rows by a column into a list
+1 column
 ```python
 df = df.groupby('column_1')['column_2'].apply(list).reset_index(name='lists')
 ```
+Many columns
 ```python
 In [5]: df = pd.DataFrame( {'a':['A','A','B','B','B','C'], 'b':[1,2,5,5,4,6],'c'
    ...: :[3,3,3,4,4,4]})
