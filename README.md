@@ -1,4 +1,4 @@
-# pandas-tips
+# pandas
 
 ### 1. Insert a new row in top of a dataframe 
 
