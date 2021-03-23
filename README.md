@@ -40,3 +40,8 @@ A     [1, 2]     [3, 3]
 B  [5, 5, 4]  [3, 4, 4]
 C        [6]        [4]
 ```
+
+### 3. Select only colummns
+```python
+df[['column_1','column_2']]
+```
