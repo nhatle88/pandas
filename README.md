@@ -56,5 +56,5 @@ df['new_column'] = np.where(df['column_1'].notnull(), 1, 0)
 df['money'] = df6.apply(lambda x: '{:,.0f}'.format(x['money']), axis=1)
 ```
 ```python
-total = "{:,}".format(total)
+total = '{:,}'.format(total)
 ```
