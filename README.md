@@ -45,3 +45,8 @@ C        [6]        [4]
 ```python
 df[['column_1','column_2']]
 ```
+
+### 4. Add a new column with conditions
+```python
+df['new_column'] = np.where(df['column_1'].notnull(), 1, 0)
+```
