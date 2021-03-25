@@ -51,7 +51,10 @@ df[['column_1','column_2']]
 df['new_column'] = np.where(df['column_1'].notnull(), 1, 0)
 ```
 
-### 5. Seperate a number with commas
+### 5. Seperate a number or a dataframe clolumn with commas
 ```python
 df['money'] = df6.apply(lambda x: '{:,.0f}'.format(x['money']), axis=1)
+```
+```python
+total = "{:,}".format(total)
 ```
