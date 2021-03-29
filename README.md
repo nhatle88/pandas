@@ -58,3 +58,8 @@ df['money'] = df6.apply(lambda x: '{:,.0f}'.format(x['money']), axis=1)
 ```python
 total = '{:,}'.format(total)
 ```
+
+### 6. Drop null in a specific column
+```python
+df = df.dropna(subset=['name_column'])
+```
